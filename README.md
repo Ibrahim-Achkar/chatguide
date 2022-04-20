@@ -6,20 +6,20 @@ An app for the giving and receiving of anonymous advice.
 
 ### Basic functionality
 
-[ ] sign up - username, password, email only <br />
-[ ] text only - no pictures, no links <br />
-[ ] you get to ask one question a day <br />
-[ ] you get to respond to one question a day <br />
-[ ] server gathers questions and randomly selects a user to answer <br />
-[ ] responding to a question opens up a temporary real time chat between asker and answerer <br />
-[ ] chat closes after a total of 5000 characters sent <br />
-[ ] chat can be closed at any time by either party <br />
+- [ ] sign up - username, password, email only <br />
+- [ ] text only - no pictures, no links <br />
+- [ ] you get to ask one question a day <br />
+- [ ] you get to respond to one question a day <br />
+- [ ] server gathers questions and randomly selects a user to answer <br />
+- [ ] responding to a question opens up a temporary real time chat between asker and answerer <br />
+- [ ] chat closes after a total of 5000 characters sent <br />
+- [ ] chat can be closed at any time by either party <br />
 
 ### Extending functionality
 
-[ ] rate advice <br />
-[ ] ratings invisible but stored on server <br />
-[ ] those with higher ratings more likley to get a question served to them <br />
+- [ ] rate advice <br />
+- [ ] ratings invisible but stored on server <br />
+- [ ] those with higher ratings more likley to get a question served to them <br />
 
 ## Getting Started
 
