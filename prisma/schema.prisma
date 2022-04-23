@@ -11,12 +11,26 @@ datasource db {
 }
 
 model User {
-  id        String   @id @default(uuid())
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-  email     String?  @unique
-  image     String?
-  role      Role     @default(USER)
+  id               String    @id @default(uuid())
+  createdAt        DateTime  @default(now())
+  updatedAt        DateTime  @updatedAt
+  username         String    @unique
+  email            String    @unique
+  image            String?
+  role             Role      @default(USER)
+  sentMessages     Message[] @relation("sentMessages")
+  receivedMessages Message[] @relation("receivedMessages")
+}
+
+model Message {
+  id         String   @id @default(uuid())
+  createdAt  DateTime @default(now())
+  isQuestion Boolean  @default(false)
+  content    String
+  sender     User     @relation(name: "sentMessages", fields: [senderId], references: [id], onDelete: Cascade)
+  senderId   String
+  receiver   User     @relation(name: "receivedMessages", fields: [receiverId], references: [id], onDelete: Cascade)
+  receiverId String
 }
 
 enum Role {
