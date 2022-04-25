@@ -4,6 +4,15 @@
 
 An app for the giving and receiving of anonymous advice.
 
+### Tech stack
+
+- [x] nextJS <br />
+- [x] PostgreSQL<br />
+- [x] prisma (to learn about an ORM for SQL)<br />
+- [ ] GraphQL/Apollo (to learn about graphql) <br />
+- [ ] AuthO - for easy authentication (can be replaced later) <br />
+- [ ] Deploy to Heroku <br />
+
 ### Basic functionality
 
 - [ ] sign up - username, password, email only <br />

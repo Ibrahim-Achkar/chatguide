@@ -1,4 +1,4 @@
-import { prisma } from './client.js';
+const prisma = require('./prismaClient.js');
 
 const userData = [
   {
