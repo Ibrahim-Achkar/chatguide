@@ -7,9 +7,9 @@ An app for the giving and receiving of anonymous advice.
 ### Tech stack
 
 - [x] nextJS <br />
-- [x] PostgreSQL<br />
-- [x] prisma (to learn about an ORM for SQL)<br />
-- [x] GraphQL/Apollo/Nexus (to learn about graphql) <br />
+- [x] data storage with PostgreSQL<br />
+- [x] ORM with prisma<br />
+- [x] API built with GraphQL/Apollo/Nexus (to learn about graphql) <br />
 - [ ] AuthO - for easy authentication (can be replaced later) <br />
 - [ ] Deploy to Heroku <br />
 
@@ -30,22 +30,36 @@ An app for the giving and receiving of anonymous advice.
 - [ ] ratings invisible but stored on server <br />
 - [ ] those with higher ratings more likley to get a question served to them <br />
 
-## Getting Started
+## Getting Started (Development)
 
-First, run the development server:
+### Install dependencies
+
+If you have just pulled from GitHub, run yarn add
+
+### NextJS
+
+Run the development server:
 
 ```bash
-npm run dev
-# or
 yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
 [API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+### Apollo & GraphQL API
+
+An apollo server will start running on yarn dev.
+
+To access the apollo query builder, go to [http://localhost:3000/api/graphql](http://localhost:3000/api/graphql). This will connect to the apollo server with an up to date schema.
+
+Because we are using Prisma as the ORM, the queries built using nexus will use the prisma connection to access the data needed for a particular request.
+
+### GitHub
+
+If you are working on a new feature start a new branch. Pull requests must be reviewed by one other member of the team before being merged into main.
